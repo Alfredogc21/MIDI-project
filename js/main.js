@@ -23,7 +23,7 @@ for(let contador = 0; contador < listaDeTeclas.length; contador++) {
 
     // Asignar función al evento keydown para agregar la clase 'activa'
     tecla.onkeydown = function(evento) { // Recibir el evento como argumento, para poder acceder a la propiedad 'code' y saber que tecla se presionó
-        if(evento.code === 'Space') { 
+        if(evento.code === 'Space' || evento.code === 'Enter') { 
             tecla.classList.add('activa');
         }
     }
