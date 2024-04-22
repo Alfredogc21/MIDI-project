@@ -21,4 +21,14 @@ for(let contador = 0; contador < listaDeTeclas.length; contador++) {
         playSonido(idAudio);
     };
 
+    // Asignar función al evento keydown para agregar la clase 'activa'
+    tecla.onkeydown = function() {
+        tecla.classList.add('activa');
+    }
+
+    // Asignar función al evento keyup para quitar la clase 'activa'
+    tecla.onkeyup = function() {
+        tecla.classList.remove('activa');
+    }
+
 }
